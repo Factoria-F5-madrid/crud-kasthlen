@@ -37,7 +37,7 @@ Los **patrones de arquitectura** son formas organizadas de estructurar el códig
 - **Modelo:** Gestiona los datos (base de datos).
 - **Vista:** Muestra los datos al usuario.
 - **Controlador:** Maneja la lógica y decide qué datos mostrar y cómo responder.
-  <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/30e48459-4d72-4af6-b198-131052ad379c" />
+<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/30e48459-4d72-4af6-b198-131052ad379c" />
 
 Es como un restaurante:
 - Modelo: la cocina (prepara los datos).
