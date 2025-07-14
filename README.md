@@ -1,3 +1,6 @@
+<img width="2048" height="2048" alt="Gemini_Generated_Image_ed63wked63wked63" src="https://github.com/user-attachments/assets/156aea72-56fc-46cf-855b-438e60cf7892" />
+
+
 # 📚 Sistema de Gestión de Libros en Django
 
 Este proyecto es una aplicación web construida con Django que permite **crear, leer, actualizar y eliminar libros**. Es un sistema básico de gestión de libros, ideal para aprender sobre aplicaciones CRUD, patrones de arquitectura como MVT, y cómo Django estructura sus proyectos.
