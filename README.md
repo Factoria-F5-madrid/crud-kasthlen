@@ -11,19 +11,19 @@ Este proyecto es una aplicación web construida con Django que permite **crear, 
 
 **CRUD** es un acrónimo en inglés que significa:
 
-- **C**reate → Crear datos.
-- **R**ead → Leer datos.
-- **U**pdate → Actualizar datos.
-- **D**elete → Eliminar datos.
+:cherries: **C**reate → Crear datos. <br>
+:cherries: **R**ead → Leer datos. <br>
+:cherries: **U**pdate → Actualizar datos. <br>
+:cherries: **D**elete → Eliminar datos. <br>
 
 El propósito de un CRUD en una aplicación web es permitir que los usuarios **interactúen con los datos de forma completa**, es decir, que puedan agregar, ver, editar y borrar información a través de una interfaz sencilla.
 
 ### 🧩 Ejemplo de aplicación CRUD:
 **Instagram** es un ejemplo:  
-- Crear: puedes subir una nueva foto (crear un post).
-- Leer: puedes ver tus publicaciones y las de otros.
-- Update: puedes editar la descripción o eliminar comentarios.
-- Delete: puedes borrar tus publicaciones.
+:cherries: Crear: puedes subir una nueva foto (crear un post). <br>
+:cherries: Leer: puedes ver tus publicaciones y las de otros. <br>
+:cherries: Update: puedes editar la descripción o eliminar comentarios. <br>
+:cherries: Delete: puedes borrar tus publicaciones. <br>
   
 <img width="225" height="225" alt="image" src="https://github.com/user-attachments/assets/ab43a3e4-cbbb-4fb1-9be3-18326f29f064" />
 
@@ -34,28 +34,30 @@ El propósito de un CRUD en una aplicación web es permitir que los usuarios **i
 
 Los **patrones de arquitectura** son formas organizadas de estructurar el código de un proyecto. Ayudan a separar responsabilidades para que el software sea **más ordenado, mantenible y escalable**.
 
-### 📌 ¿Qué es el patrón MVC (Modelo–Vista–Controlador)?
+### :star2:  ¿Qué es el patrón MVC (Modelo–Vista–Controlador)?
 
-- **Modelo:** Gestiona los datos (base de datos).
-- **Vista:** Muestra los datos al usuario.
-- **Controlador:** Maneja la lógica y decide qué datos mostrar y cómo responder.
+:cherries:  **Modelo:** Gestiona los datos (base de datos). <br>
+:cherries:  **Vista:** Muestra los datos al usuario. <br>
+:cherries:  **Controlador:** Maneja la lógica y decide qué datos mostrar y cómo responder. <br>
   
 <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/30e48459-4d72-4af6-b198-131052ad379c" />
 
-Es como un restaurante:
-- Modelo: la cocina (prepara los datos).
-- Controlador: el camarero (recibe pedidos y entrega resultados).
-- Vista: el plato en la mesa (la interfaz que el cliente ve).
+🧑‍🍳 Es como un restaurante:
 
-### 📌 ¿Qué es el patrón MVT (Modelo–Vista–Template)?
+:cherries:  Modelo: la cocina (prepara los datos).  <br>
+:cherries:  Controlador: el camarero (recibe pedidos y entrega resultados). <br>
+:cherries:  Vista: el plato en la mesa (la interfaz que el cliente ve). <br>
+
+---
+### :star2:  ¿Qué es el patrón MVT (Modelo–Vista–Template)?
 
 <img width="900" height="628" alt="image" src="https://github.com/user-attachments/assets/73a23dc4-7bb3-4fab-b7b7-342b6c474da0" />
 
 Django usa una variación de MVC llamada **MVT**:
 
-- **Modelo:** igual que en MVC, gestiona los datos.
-- **Vista:** contiene la lógica (funciones que responden a una solicitud).
-- **Template (Plantilla):** es el HTML que se muestra al usuario.
+:cherries:  **Modelo:** igual que en MVC, gestiona los datos. <br>
+:cherries:  **Vista:** contiene la lógica (funciones que responden a una solicitud). <br>
+:cherries:  **Template (Plantilla):** es el HTML que se muestra al usuario. <br>
 
 En MVT, Django ya se encarga del "Controlador", por eso tú solo te enfocas en **Modelos, Vistas y Plantillas**.
 
@@ -69,10 +71,10 @@ En MVT, Django ya se encarga del "Controlador", por eso tú solo te enfocas en *
 | Template | No existe como tal | HTML que se muestra al usuario |
 
 ### ✅ ¿Cuál se usa en Django?
+
 Django usa el patrón **MVT**.
 
 <img width="310" height="163" alt="image" src="https://github.com/user-attachments/assets/91fb48e9-f9e6-43c1-aff3-9e2404630810" />
-
 
 ---
 
@@ -80,22 +82,24 @@ Django usa el patrón **MVT**.
 
 Un proyecto en Django se divide en varias partes:
 
-1. Carpeta Raíz del proyecto:
+**1. Carpeta Raíz del proyecto:**
    
-- **manage.py**: Utilidad de línea de comandos para administrar el proyecto, como ejecutar el servidor de desarrollo, realizar migraciones, etc. 
-- **nombre_proyecto/**: Subcarpeta con el nombre del proyecto, que contiene:
-- ** __init__.py:** Archivo vacío que marca el directorio como un paquete Python. 
-- **settings.py:** Archivo de configuración del proyecto, donde se definen variables como la base de datos, las aplicaciones instaladas, la configuración regional, etc. 
-- **urls.py:** Archivo que define las rutas (URLs) del proyecto y las vistas asociadas. 
-- **wsgi.py y asgi.py:** Puntos de entrada para la comunicación con servidores web, utilizados para el despliegue. 
+:cherries:  **manage.py**: Utilidad de línea de comandos para administrar el proyecto, como ejecutar el servidor de desarrollo, realizar migraciones, etc.  <br>
+:cherries:  **nombre_proyecto/**: Subcarpeta con el nombre del proyecto, que contiene: <br>
+:cherries:  **__init__.py:** Archivo vacío que marca el directorio como un paquete Python.  <br>
+:cherries:  **settings.py:** Archivo de configuración del proyecto, donde se definen variables como la base de datos, las aplicaciones instaladas, la configuración regional, etc.  <br>
+:cherries:  **urls.py:** Archivo que define las rutas (URLs) del proyecto y las vistas asociadas.  <br>
+:cherries:  **wsgi.py y asgi.py:** Puntos de entrada para la comunicación con servidores web, utilizados para el despliegue.  <br>
 
-2. Aplicaciones:
-- **Modelos (`models.py`)**: Definen las tablas de la base de datos. Cada clase representa un tipo de dato (por ejemplo: Libro).
-- **Vistas (`views.py`)**: Son funciones que procesan las solicitudes y deciden qué se muestra o se guarda.
-- **Templates (`templates/`)**: Son archivos HTML donde se muestra la información al usuario.
-- **URLs (`urls.py`)**: Conectan las direcciones web (como `/libros/1/`) con la vista que se debe ejecutar.
+**2. Aplicaciones:**
 
-3. Beneficios:
+:cherries:  **Modelos (`models.py`)**: Definen las tablas de la base de datos. Cada clase representa un tipo de dato (por ejemplo: Libro). <br>
+:cherries:  **Vistas (`views.py`)**: Son funciones que procesan las solicitudes y deciden qué se muestra o se guarda. <br>
+:cherries:  **Templates (`templates/`)**: Son archivos HTML donde se muestra la información al usuario. <br>
+:cherries:  **URLs (`urls.py`)**: Conectan las direcciones web (como `/libros/1/`) con la vista que se debe ejecutar. <br>
+
+**3. Beneficios:**
+
 **Modularidad:**
 Facilita la organización y el desarrollo de proyectos complejos dividiéndolos en partes más pequeñas y manejables.
 **Reutilización:**
@@ -106,18 +110,20 @@ La estructura clara facilita la comprensión y el mantenimiento del código, esp
 Permite agregar nuevas funcionalidades o modificar las existentes sin afectar a otras partes del proyecto. 
 Por lo tanto, la estructura de Django promueve un desarrollo organizado, modular y mantenible, permitiendo a los desarrolladores construir aplicaciones web complejas de manera eficiente.
 
----
+--- 
 
-### 🧠 ¿Para qué se usa el signo `{{ }}` y `{% %}` en los templates?
+### :star2:  ¿Para qué se usa el signo `{{ }}` y `{% %}` en los templates?
 
-- `{{ dato }}`: Muestra un valor o variable en el HTML.
-- `{% instrucción %}`: Se usa para ejecutar instrucciones como bucles o condiciones (por ejemplo: `{% for libro in libros %}`).
-#### Ejemplo con static
+- `{{ dato }}`: Muestra un valor o variable en el HTML. <br>
+- `{% instrucción %}`: Se usa para ejecutar instrucciones como bucles o condiciones (por ejemplo: `{% for libro in libros %}`). <br>
+- 
+### Ejemplo con static
+
  ¿Qué es {% static %}?
+ 
 Es una etiqueta del sistema de plantillas de Django que genera la URL absoluta del archivo estático indicado.
 
 Por ejemplo:
-
 
 ```
 <link rel="stylesheet" href="{% static 'libros/css/lista_libros.css' %}">
@@ -131,17 +137,19 @@ Asumiendo que tu configuración en settings.py tiene:
 ```
 STATIC_URL = '/static/'
 ```
-#¿Por qué no usar simplemente /static/libros/css/lista_libros.css directamente?
+----
+### ¿Por qué no usar simplemente /static/libros/css/lista_libros.css directamente?
 Podrías hacerlo, pero:
 
-1. No es portable: si cambias STATIC_URL a otra cosa (por ejemplo, /assets/ en producción), tendrías que cambiar todos los href/src manualmente.
+**1. No es portable:** si cambias STATIC_URL a otra cosa (por ejemplo, /assets/ en producción), tendrías que cambiar todos los href/src manualmente.
 
-2. Es mala práctica: Django recomienda siempre usar {% static %} para evitar errores y adaptarse a entornos de desarrollo y producción.
+2. **Es mala práctica:** Django recomienda siempre usar {% static %} para evitar errores y adaptarse a entornos de desarrollo y producción.
 
-3. Soporta almacenamiento externo: si usas Amazon S3, CDN u otra configuración más avanzada, Django sabe cómo resolver la URL correcta.
+3. **Soporta almacenamiento externo:** si usas Amazon S3, CDN u otra configuración más avanzada, Django sabe cómo resolver la URL correcta.
+   
 ---
 
-## 4. ¿Cuál es el flujo de datos entre un formulario HTML y la base de datos en Django?
+### 4. ¿Cuál es el flujo de datos entre un formulario HTML y la base de datos en Django?
 
 1. El usuario **llena un formulario HTML** (por ejemplo, para crear un libro).
 2. Al hacer clic en "Enviar", el formulario envía los datos al servidor.
@@ -150,7 +158,101 @@ Podrías hacerlo, pero:
 5. Los datos se **guardan en la base de datos**.
 6. Se muestra una página de confirmación o se redirige a la lista de libros.
 
+----
+
+### ¿Qué es un formulario HTML?
+
+Es una parte de una página web que te permite escribir información, por ejemplo:
+
+```
+<form method="post"> <br/>
+<input type="text" name="titulo"> <br/>
+<button type="submit">Guardar</button> <br/>
+</form><br/>
+```
+
+Es como llenar una ficha de papel, solo que lo haces en una página web. Esa información necesita ser enviada a algún lugar… y aquí es donde entra Django.
+
+----
+
+###  ¿A dónde va la información del formulario?
+
+Cuando haces clic en el botón de "Guardar" (o "Enviar"), la información que escribiste se envía al servidor, es decir, al "cerebro" de tu aplicación Django. El servidor recibe los datos, los procesa y, si todo está bien, los guarda en una base de datos (un lugar que almacena toda la información).
+----
+
+### Flujo completo, paso a paso
+
+**1. El usuario abre una página para llenar un formulario**
+
+Por ejemplo: una página para crear un nuevo libro. Django te muestra un formulario en HTML con campos como:
+
+:cherries: Título <br>
+:cherries: Autor <br>
+:cherries: Descripción <br>
+:cherries: ISBN <br>
+
+**2. El usuario llena el formulario**
+   
+La persona escribe:
+
+:cherries:  Título: Cien Años de Soledad <br>
+:cherries:  Autor: Gabriel García Márquez <br>
+:cherries:  ... <br>
+
+Y hace clic en "Guardar".
+
 ---
+
+**3. El navegador envía los datos al servidor de Django**
+   
+Django recibe esos datos como un "paquete" que contiene:
+
+`
+titulo = "Cien Años de Soledad" <br/>
+autor = "Gabriel García Márquez" <br/>
+descripcion = "Una novela sobre..." <br/>
+` 
+**4. Django procesa y valida los datos**
+
+Django revisa:
+
+:cherries:  ¿Faltó algún campo obligatorio?  <br>
+:cherries:  ¿El ISBN es un número válido? <br>
+:cherries:  ¿El título ya existe? <br>
+  
+Para hacer esto, Django suele usar una clase llamada ModelForm, que verifica que los datos cumplan las reglas.
+
+**5.  Si los datos son válidos, Django los guarda en la base de datos**
+   
+Django convierte ese "paquete" en un nuevo registro de libro, y lo guarda en la base de datos (como si fuera una gran hoja de cálculo).
+
+**6. Django responde al usuario**
+   
+Después de guardar los datos, Django puede hacer varias cosas:
+
+:cherries:  Mostrar un mensaje de "Libro guardado con éxito". <br>
+:cherries:  Llevar al usuario a otra página (como la lista de libros). <br>
+:cherries:  Volver al formulario para crear otro. <br>
+----
+
+### Ejemplo 
+
+| Paso | Acción                               | ¿Qué hace Django?              |
+| ---- | ------------------------------------ | ------------------------------ |
+| 1    | Llenas un formulario                 | HTML                           |
+| 2    | Lo envías (click en Guardar)         | Recibe los datos               |
+| 3    | Django revisa si todo está bien      | `ModelForm` valida             |
+| 4    | Guarda los datos en la base de datos | Usando el modelo (ej: `Libro`) |
+| 5    | Muestra una respuesta al usuario     | Redirecciona o muestra mensaje |
+
+🌟 ¿Qué archivos están involucrados en Django?
+ 
+| Archivo            | Rol                                                      |
+| ------------------ | -------------------------------------------------------- |
+| `forms.py`         | Define el formulario (con validaciones)                  |
+| `views.py`         | Recibe y maneja los datos del formulario                 |
+| `models.py`        | Define cómo se guarda la información en la base de datos |
+| `templates/*.html` | Contiene el formulario que ve el usuario                 |
 
 ## 5. ¿Qué herramientas o comandos ofrece Django para facilitar el desarrollo de un CRUD?
 
@@ -172,16 +274,18 @@ Podrías hacerlo, pero:
 
 Django tiene un panel llamado **admin** (http://localhost:8000/admin) que permite:
 
-- Ver, crear, editar y eliminar datos de cualquier modelo.
-- Acceder solo con usuarios con permisos de administrador.
-- Es muy útil para gestionar datos **sin tener que crear páginas manuales**.
+:cherries:  Ver, crear, editar y eliminar datos de cualquier modelo. <br>
+:cherries:  Acceder solo con usuarios con permisos de administrador. <br>
+:cherries:  Es muy útil para gestionar datos **sin tener que crear páginas manuales**. <br>
 
 ### ¿Cómo se usa?
 
-1. Activas los modelos en `admin.py` con:
-   ```python
-   from .models import Libro
-   admin.site.register(Libro)
-2. Inicias sesión con tu superusuario.
+**1. Activas los modelos en `admin.py` con:**
+   `
+   from .models import Libro <br/>
+   admin.site.register(Libro)<br/>
+   `
+   
+3. **Inicias sesión con tu superusuario.**
 
-3. Ya puedes gestionar libros y cualquier otro modelo desde una interfaz web sencilla.
+4. **Ya puedes gestionar libros y cualquier otro modelo desde una interfaz web sencilla.**
