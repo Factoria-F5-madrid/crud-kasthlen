@@ -289,6 +289,6 @@ Django tiene un panel llamado **admin** (http://localhost:8000/admin) que permit
    admin.site.register(Libro)<br/>
    `
    
-3. **Inicias sesión con tu superusuario.**
+2. **Inicias sesión con tu superusuario.**
 
-4. **Ya puedes gestionar libros y cualquier otro modelo desde una interfaz web sencilla.**
+3. **Ya puedes gestionar libros y cualquier otro modelo desde una interfaz web sencilla.**
