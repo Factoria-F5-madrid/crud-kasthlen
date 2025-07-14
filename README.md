@@ -1,6 +1,7 @@
 # 📚 Sistema de Gestión de Libros en Django
 
 Este proyecto es una aplicación web construida con Django que permite **crear, leer, actualizar y eliminar libros**. Es un sistema básico de gestión de libros, ideal para aprender sobre aplicaciones CRUD, patrones de arquitectura como MVT, y cómo Django estructura sus proyectos.
+
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/59d92d8e-aa24-4150-b856-d4774df82a3c" />
 
 
@@ -23,6 +24,7 @@ El propósito de un CRUD en una aplicación web es permitir que los usuarios **i
 - Leer: puedes ver tus publicaciones y las de otros.
 - Update: puedes editar la descripción o eliminar comentarios.
 - Delete: puedes borrar tus publicaciones.
+  
 <img width="225" height="225" alt="image" src="https://github.com/user-attachments/assets/ab43a3e4-cbbb-4fb1-9be3-18326f29f064" />
 
 
@@ -37,6 +39,7 @@ Los **patrones de arquitectura** son formas organizadas de estructurar el códig
 - **Modelo:** Gestiona los datos (base de datos).
 - **Vista:** Muestra los datos al usuario.
 - **Controlador:** Maneja la lógica y decide qué datos mostrar y cómo responder.
+  
 <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/30e48459-4d72-4af6-b198-131052ad379c" />
 
 Es como un restaurante:
@@ -45,7 +48,8 @@ Es como un restaurante:
 - Vista: el plato en la mesa (la interfaz que el cliente ve).
 
 ### 📌 ¿Qué es el patrón MVT (Modelo–Vista–Template)?
-<img width="310" height="163" alt="image" src="https://github.com/user-attachments/assets/91fb48e9-f9e6-43c1-aff3-9e2404630810" />
+
+<img width="900" height="628" alt="image" src="https://github.com/user-attachments/assets/73a23dc4-7bb3-4fab-b7b7-342b6c474da0" />
 
 Django usa una variación de MVC llamada **MVT**:
 
@@ -66,7 +70,9 @@ En MVT, Django ya se encarga del "Controlador", por eso tú solo te enfocas en *
 
 ### ✅ ¿Cuál se usa en Django?
 Django usa el patrón **MVT**.
-<img width="900" height="628" alt="image" src="https://github.com/user-attachments/assets/73a23dc4-7bb3-4fab-b7b7-342b6c474da0" />
+
+<img width="310" height="163" alt="image" src="https://github.com/user-attachments/assets/91fb48e9-f9e6-43c1-aff3-9e2404630810" />
+
 
 ---
 
