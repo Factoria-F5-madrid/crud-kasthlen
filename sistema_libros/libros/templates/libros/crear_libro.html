@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crear Libro</title>
+    <link rel="stylesheet" href="{% static 'libros/css/crear_libro.css' %}">
+</head>
+<body>
+    <h1>Crear Libro</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Guardar</button>
+    </form>
+    <a href="{% url 'lista_libros' %}">Cancelar</a>
+</body>
+</html>
